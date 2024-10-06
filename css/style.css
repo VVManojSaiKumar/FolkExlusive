@@ -143,7 +143,7 @@
     }
 }
 
-
+/*** Navbar End ***/
 /*** Header ***/
 .carousel-caption {
     top: 0;
@@ -204,9 +204,11 @@
 .section-title {
     position: relative;
     display: inline-block;
-    text-transform: uppercase;
+    /*text-transform: lowercase;*/
     font-weight: 600;
 }
+
+
 
 .section-title::before {
     position: absolute;
@@ -475,6 +477,8 @@
 /*** Footer ***/
 .footer {
     color: #B0B9AE;
+
+    
 }
 
 .footer .btn.btn-link {
@@ -788,19 +792,28 @@
 
 /************************ Donate Button Start******************************************************/
 
-.donate-button {
-    background-color: #87CEEB; /* Dark teal background */
-    color: white; /* White text */
+.donate-btn {
+    background: linear-gradient(90deg, #f1c40f, #f39c12);  /*Gradient from left to right*/
     border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    border-radius: 10px;
+    color: white;
+    padding: 12px 25px;
     font-size: 16px;
-    margin: 4px 2px;
+    font-weight: bold;
     cursor: pointer;
-    border-radius: 25px; /* Pill shape */
-  }
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #2c2c2c;
+}
+
+.donate-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.donate-btn:focus {
+    outline: none;
+}
 /************************ Donate Button End ******************************************************
 
 /************************ Residency End ******************************************************/
